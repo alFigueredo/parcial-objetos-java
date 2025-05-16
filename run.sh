@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp target/jlox-1.0-SNAPSHOT.jar com.craftinginterpreters.lox.Lox main.lox
+java -cp target/parcial_objetos-1.0-SNAPSHOT.jar com.example.parcial_objetos.App
