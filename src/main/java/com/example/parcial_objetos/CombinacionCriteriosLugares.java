@@ -10,7 +10,7 @@ public class CombinacionCriteriosLugares implements PreferenciaVacaciones {
 
 	@Override
 	public boolean tienePreferencia(Persona persona, Lugar lugar) {
-		for (PreferenciaVacaciones criterio : criterios) {
+		for (PreferenciaVacaciones criterio : this.criterios) {
 			if (criterio.tienePreferencia(persona, lugar))
 				return true;
 		}
