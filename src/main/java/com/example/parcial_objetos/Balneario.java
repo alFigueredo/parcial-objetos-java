@@ -14,7 +14,7 @@ public class Balneario extends Lugar {
 	}
 
 	public boolean esDivertido() {
-		return this.muchaPlaya() && this.marPeligroso;
+		return this.muchaPlaya() && marPeligroso;
 	}
 
 	private boolean muchaPlaya() {
@@ -22,7 +22,7 @@ public class Balneario extends Lugar {
 	}
 
 	public boolean lugarTranquilo() {
-		return !this.tienePeatonal;
+		return !tienePeatonal;
 	}
 
 }

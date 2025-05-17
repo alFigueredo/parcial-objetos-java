@@ -30,7 +30,7 @@ public class Ciudad extends Lugar {
 	}
 
 	private boolean lugarConPocoRuido() {
-		return this.decibelesPromedio < 20;
+		return decibelesPromedio < 20;
 	}
 
 }

@@ -27,8 +27,8 @@ public class Pueblo extends Lugar {
 
 	private boolean esDelLitoral() {
 		final String[] provinciasLitoral = { "Entre Ríos", "Corrientes", "Misiones" };
-		for (String provincia : provinciasLitoral) {
-			if (this.provincia.equals(provincia))
+		for (String provinciaLitoral : provinciasLitoral) {
+			if (provincia.equals(provinciaLitoral))
 				return true;
 		}
 		return false;
@@ -39,6 +39,6 @@ public class Pueblo extends Lugar {
 	}
 
 	private boolean esDeLaPampa() {
-		return this.provincia.equals("La Pampa");
+		return provincia.equals("La Pampa");
 	}
 }

@@ -13,13 +13,13 @@ public abstract class Lugar {
 	}
 
 	public boolean nombreConCantidadParDeLetras() {
-		return this.nombre.length() % 2 == 0;
+		return nombre.length() % 2 == 0;
 	}
 
 	abstract boolean esDivertido();
 
 	public boolean nombreConMuchasLetras() {
-		return this.nombre.length() > 10;
+		return nombre.length() > 10;
 	}
 
 	abstract boolean lugarTranquilo();

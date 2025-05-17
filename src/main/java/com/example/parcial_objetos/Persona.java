@@ -31,7 +31,7 @@ public class Persona {
 	}
 
 	public boolean puedePagarElTour(int montoAPagar) {
-		return montoAPagar <= this.presupuestoMaximo;
+		return montoAPagar <= presupuestoMaximo;
 	}
 
 	public boolean lugaresAdecuados(Lugar[] lugares) {
