@@ -1,6 +1,7 @@
 package com.example.parcial_objetos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -37,6 +38,7 @@ public class ReporteTest {
 	public void toursPendientesDeConfirmacion() {
 		final Tour[] tours = reporte.toursPendientesDeConfirmacion();
 		assertEquals(1, tours.length);
+		assertFalse(tours[0].tourConfirmado());
 	}
 
 	@Test

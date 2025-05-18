@@ -2,6 +2,7 @@ package com.example.parcial_objetos;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -65,6 +66,6 @@ public class TourTest {
 		final Tour tour = new Tour(LocalDate.of(2023, 1, 7), 3, new Lugar[] { ciudad, pueblo }, 800000,
 				new ArrayList<Persona>(Arrays.asList(persona1, persona2, persona)));
 		assertDoesNotThrow(() -> tour.desvincularPersona(persona));
-		assertTrue(!tour.tourConfirmado());
+		assertFalse(tour.tourConfirmado());
 	}
 }
