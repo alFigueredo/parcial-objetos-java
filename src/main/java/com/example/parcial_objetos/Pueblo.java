@@ -1,5 +1,7 @@
 package com.example.parcial_objetos;
 
+import java.util.Arrays;
+
 public class Pueblo extends Lugar {
 
 	private final int extension;
@@ -26,12 +28,8 @@ public class Pueblo extends Lugar {
 	}
 
 	private boolean esDelLitoral() {
-		final String[] provinciasLitoral = { "Entre Ríos", "Corrientes", "Misiones" };
-		for (String provinciaLitoral : provinciasLitoral) {
-			if (provincia.equals(provinciaLitoral))
-				return true;
-		}
-		return false;
+		return Arrays.stream(new String[] { "Entre Ríos", "Corrientes", "Misiones" })
+				.anyMatch((provinciaLitoral) -> provinciaLitoral.equals(provincia));
 	}
 
 	public boolean lugarTranquilo() {

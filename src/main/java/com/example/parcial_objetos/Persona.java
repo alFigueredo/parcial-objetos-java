@@ -1,5 +1,7 @@
 package com.example.parcial_objetos;
 
+import java.util.Arrays;
+
 public class Persona {
 
 	private PreferenciaVacaciones preferenciaVacaciones;
@@ -35,11 +37,7 @@ public class Persona {
 	}
 
 	public boolean lugaresAdecuados(Lugar[] lugares) {
-		for (Lugar lugar : lugares) {
-			if (!this.tienePreferencia(lugar))
-				return false;
-		}
-		return true;
+		return Arrays.stream(lugares).allMatch((lugar) -> this.tienePreferencia(lugar));
 	}
 
 }

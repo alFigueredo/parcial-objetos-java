@@ -15,8 +15,10 @@ public class TourTest {
 
 	private final PreferenciaVacaciones preferencia = new CombinacionCriteriosLugares(
 			new PreferenciaVacaciones[] { new LugaresTranquilos(), new LugaresRaros() });
+
 	private final Persona persona1 = new Persona(preferencia, 1000000);
 	private final Persona persona2 = new Persona(preferencia, 1000000);
+
 	private final Ciudad ciudad = new Ciudad("Nombre letras par", 200000,
 			new String[] { "Fuente", "Plaza", "Obelisco", "Rosedal" }, 30);
 	private final Pueblo pueblo = new Pueblo("Nombre par", 100, 1750, "La Pampa");
