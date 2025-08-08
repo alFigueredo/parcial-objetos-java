@@ -1,7 +1,7 @@
 package com.example.parcial_objetos;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
+import java.util.HashSet;
 
 import com.example.parcial_objetos.lugar.Lugar;
 import com.example.parcial_objetos.persona.Persona;
@@ -12,10 +12,10 @@ public class Tour {
 	private final int cantPersonasRequeridas;
 	private final Lugar[] listaLugares;
 	private final int montoAPagarPorPersona;
-	private final ArrayList<Persona> personas;
+	private final HashSet<Persona> personas;
 
 	public Tour(LocalDate fechaSalida, int cantPersonasRequeridas, Lugar[] listaLugares, int montoAPagarPorPersona,
-			ArrayList<Persona> personas) {
+			HashSet<Persona> personas) {
 		this.fechaSalida = fechaSalida;
 		this.cantPersonasRequeridas = cantPersonasRequeridas;
 		this.listaLugares = listaLugares;

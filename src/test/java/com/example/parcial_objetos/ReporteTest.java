@@ -4,8 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 
 import org.junit.jupiter.api.Test;
 
@@ -23,9 +23,9 @@ public class ReporteTest {
 	private final PreferenciaVacaciones preferencia = new CombinacionCriteriosLugares(
 			new PreferenciaVacaciones[] { new LugaresTranquilos(), new LugaresRaros() });
 
-	private final Persona persona1 = new Persona(preferencia, 1000000);
-	private final Persona persona2 = new Persona(preferencia, 1000000);
-	private final Persona persona3 = new Persona(preferencia, 1000000);
+	private final Persona persona1 = new Persona(preferencia, 1000100);
+	private final Persona persona2 = new Persona(preferencia, 1000200);
+	private final Persona persona3 = new Persona(preferencia, 1000300);
 
 	private final Ciudad ciudad = new Ciudad("Nombre letras par", 200000,
 			new String[] { "Fuente", "Plaza", "Obelisco", "Rosedal" }, 30);
@@ -33,13 +33,13 @@ public class ReporteTest {
 
 	private final Tour tour1 = new Tour(LocalDate.of(LocalDate.now().getYear(), 1, 7), 3,
 			new Lugar[] { ciudad, pueblo },
-			800000, new ArrayList<Persona>(Arrays.asList(persona1, persona2)));
+			800000, new HashSet<Persona>(Arrays.asList(persona1, persona2)));
 	private final Tour tour2 = new Tour(LocalDate.of(LocalDate.now().minusYears(1).getYear(), 1, 7), 2,
 			new Lugar[] { ciudad, pueblo },
-			700000, new ArrayList<Persona>(Arrays.asList(persona1, persona2)));
+			700000, new HashSet<Persona>(Arrays.asList(persona1, persona2)));
 	private final Tour tour3 = new Tour(LocalDate.of(LocalDate.now().getYear(), 1, 7), 3,
 			new Lugar[] { ciudad, pueblo },
-			600000, new ArrayList<Persona>(Arrays.asList(persona1, persona2, persona3)));
+			600000, new HashSet<Persona>(Arrays.asList(persona1, persona2, persona3)));
 
 	private final Reporte reporte = new Reporte(new Tour[] { tour1, tour2, tour3 });
 

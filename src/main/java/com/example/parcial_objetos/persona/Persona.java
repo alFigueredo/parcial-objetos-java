@@ -42,4 +42,32 @@ public class Persona {
 		return Arrays.stream(lugares).allMatch((lugar) -> this.tienePreferencia(lugar));
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((preferenciaVacaciones == null) ? 0 : preferenciaVacaciones.hashCode());
+		result = prime * result + presupuestoMaximo;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Persona other = (Persona) obj;
+		if (preferenciaVacaciones == null) {
+			if (other.preferenciaVacaciones != null)
+				return false;
+		} else if (!preferenciaVacaciones.equals(other.preferenciaVacaciones))
+			return false;
+		if (presupuestoMaximo != other.presupuestoMaximo)
+			return false;
+		return true;
+	}
+
 }
