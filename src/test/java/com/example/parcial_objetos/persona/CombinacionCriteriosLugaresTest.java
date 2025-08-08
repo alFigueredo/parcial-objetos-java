@@ -1,9 +1,11 @@
-package com.example.parcial_objetos;
+package com.example.parcial_objetos.persona;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
+
+import com.example.parcial_objetos.lugar.Ciudad;
 
 public class CombinacionCriteriosLugaresTest {
 

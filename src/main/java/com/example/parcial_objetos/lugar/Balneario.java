@@ -1,4 +1,4 @@
-package com.example.parcial_objetos;
+package com.example.parcial_objetos.lugar;
 
 public class Balneario extends Lugar {
 

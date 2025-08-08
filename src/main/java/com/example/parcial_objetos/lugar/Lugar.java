@@ -1,4 +1,4 @@
-package com.example.parcial_objetos;
+package com.example.parcial_objetos.lugar;
 
 public abstract class Lugar {
 
@@ -22,6 +22,6 @@ public abstract class Lugar {
 		return nombre.length() > 10;
 	}
 
-	abstract boolean lugarTranquilo();
+	public abstract boolean lugarTranquilo();
 
 }

@@ -3,6 +3,9 @@ package com.example.parcial_objetos;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+import com.example.parcial_objetos.lugar.Lugar;
+import com.example.parcial_objetos.persona.Persona;
+
 public class Tour {
 
 	private final LocalDate fechaSalida;

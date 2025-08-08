@@ -1,6 +1,8 @@
-package com.example.parcial_objetos;
+package com.example.parcial_objetos.persona;
 
 import java.util.Arrays;
+
+import com.example.parcial_objetos.lugar.Lugar;
 
 public class CombinacionCriteriosLugares implements PreferenciaVacaciones {
 

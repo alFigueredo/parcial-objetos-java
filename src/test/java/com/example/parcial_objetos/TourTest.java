@@ -12,6 +12,15 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
+import com.example.parcial_objetos.lugar.Ciudad;
+import com.example.parcial_objetos.lugar.Lugar;
+import com.example.parcial_objetos.lugar.Pueblo;
+import com.example.parcial_objetos.persona.CombinacionCriteriosLugares;
+import com.example.parcial_objetos.persona.LugaresRaros;
+import com.example.parcial_objetos.persona.LugaresTranquilos;
+import com.example.parcial_objetos.persona.Persona;
+import com.example.parcial_objetos.persona.PreferenciaVacaciones;
+
 public class TourTest {
 
 	private final PreferenciaVacaciones preferencia = new CombinacionCriteriosLugares(

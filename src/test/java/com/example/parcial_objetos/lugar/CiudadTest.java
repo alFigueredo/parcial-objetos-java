@@ -1,4 +1,4 @@
-package com.example.parcial_objetos;
+package com.example.parcial_objetos.lugar;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
