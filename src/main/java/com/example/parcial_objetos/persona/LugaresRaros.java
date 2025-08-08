@@ -9,4 +9,21 @@ public class LugaresRaros implements PreferenciaVacaciones {
 		return lugar.nombreConMuchasLetras();
 	}
 
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + getClass().hashCode();
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		return getClass() == obj.getClass();
+	}
+
 }

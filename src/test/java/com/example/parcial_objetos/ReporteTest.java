@@ -21,7 +21,7 @@ import com.example.parcial_objetos.persona.PreferenciaVacaciones;
 public class ReporteTest {
 
 	private final PreferenciaVacaciones preferencia = new CombinacionCriteriosLugares(
-			new PreferenciaVacaciones[] { new LugaresTranquilos(), new LugaresRaros() });
+			new HashSet<PreferenciaVacaciones>(Arrays.asList(new LugaresTranquilos(), new LugaresRaros())));
 
 	private final Persona persona1 = new Persona(preferencia, 1000100);
 	private final Persona persona2 = new Persona(preferencia, 1000200);

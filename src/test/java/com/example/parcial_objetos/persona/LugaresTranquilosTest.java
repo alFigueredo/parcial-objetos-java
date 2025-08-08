@@ -11,7 +11,7 @@ import com.example.parcial_objetos.lugar.Pueblo;
 
 public class LugaresTranquilosTest {
 
-	final Persona persona = new Persona(new LugaresTranquilos(), 1000000);
+	private final Persona persona = new Persona(new LugaresTranquilos(), 1000000);
 
 	@Test
 	public void laCiudadNoEsTranquila() {

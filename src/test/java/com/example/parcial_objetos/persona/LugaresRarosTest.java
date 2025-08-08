@@ -9,7 +9,7 @@ import com.example.parcial_objetos.lugar.Ciudad;
 
 public class LugaresRarosTest {
 
-	final Persona persona = new Persona(new LugaresRaros(), 1000000);
+	private final Persona persona = new Persona(new LugaresRaros(), 1000000);
 
 	@Test
 	public void elLugarNoEsRaro() {

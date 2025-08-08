@@ -10,7 +10,7 @@ import com.example.parcial_objetos.lugar.Pueblo;
 
 public class LugaresDivertidosTest {
 
-	final Persona persona = new Persona(new LugaresDivertidos(), 1000000);
+	private final Persona persona = new Persona(new LugaresDivertidos(), 1000000);
 
 	@Test
 	public void elLugarNoEsDivertido() {
