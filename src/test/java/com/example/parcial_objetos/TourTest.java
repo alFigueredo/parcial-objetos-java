@@ -55,7 +55,7 @@ public class TourTest {
 	public void laPersonaPuedeSerAgregadaAlTour() {
 		final Tour tour = new Tour(LocalDate.of(2023, 1, 7), 3, new Lugar[] { ciudad, pueblo }, 800000,
 				new HashSet<Persona>(Arrays.asList(persona1, persona2)));
-		final Persona persona = new Persona(preferencia, 1000100);
+		final Persona persona = new Persona(preferencia, 1000000);
 		assertDoesNotThrow(() -> tour.agregarPersona(persona));
 		assertTrue(tour.tourConfirmado());
 	}
